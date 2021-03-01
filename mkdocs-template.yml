@@ -1,10 +1,10 @@
-site_name:  
-site_url: https://dengking.github.io/
+site_name: programming-language  
+site_url: https://dengking.github.io/programming-language
 site_description: Project documentation with Markdown.
 site_author: DengKing
 
 
-repo_url: https://github.com/dengking/
+repo_url: https://github.com/dengking/programming-language
 
 edit_uri: ""
 
@@ -18,9 +18,7 @@ nav: None
 
 markdown_extensions:
     - toc:
-        baselevel: 1
-        permalink: '#'
-        separator: -
+        separator: '#'
     - admonition
     - def_list
     - mdx_gh_links:
@@ -32,8 +30,9 @@ markdown_extensions:
     - pymdownx.caret
     - pymdownx.critic
     - pymdownx.details
-    - pymdownx.emoji:
-        emoji_generator: !!python/name:pymdownx.emoji.to_svg
+    # 去除emoji，因为可能会导致编译错误
+    #- pymdownx.emoji:
+    #    emoji_generator: '!!python/name:pymdownx.emoji.to_svg'
     - pymdownx.inlinehilite
     - pymdownx.magiclink
     - pymdownx.mark
